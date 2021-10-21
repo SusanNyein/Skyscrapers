@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>homepage</title>
+	<script language="javascript">
+	function search()
+	{
+		var ss=document.myform.t1.value;
+		if(ss=="American" || ss==" American" || ss=="american" || ss==" american" ||ss=="USA" || ss==" USA"|| ss=="AMERICAN"|| ss==" AMERICAN" )
+			self.location="American.html";
+		else if( ss==" usa" || ss=="usa")
+			window.alert("Please write capital letter 'USA'");
+		else if(ss=="England" || ss==" England"|| ss=="ENGLAND" || ss==" ENGLAND")
+			window.location="England.html";
+		else if(ss==" england" || ss=="england")
+		{
+			window.alert("Don't allow lower case.");
+			window.alert("Please, write Captial Letter.");
+		}
+		else if(ss=="France" || ss==" France")
+			self.location="France.html";
+		else if(ss=="Germany" || ss==" Germany"|| ss=="GERMANY" || ss==" GERMANY")
+			self.location="Germani.html";
+		else if(ss=="Japan" || ss==" Japan"|| ss=="JAPAN" || ss==" JAPAN")
+			window.location="Japan.html";
+		else if(ss=="Malaysia" || ss==" Malaysia"|| ss=="MALAYSIA" || ss==" MALAYSIA")
+			self.location="Malaysia.html";
+		else if(ss=="China" || ss==" China" ||ss==" CHINA" || ss=="CHINA")
+			self.location="China.html";
+		else if(ss=="Switzerland" || ss==" Switzerland"|| ss=="SWITZERLAND"|| ss==" SWITZERLAND")
+			self.location="Switzerland.html";
+		else if(ss=="Thailand" || ss==" Thailand" || ss=="Thai" || ss==" Thai" || ss=="THAI" || ss==" THAI" || ss=="THAILAND" || ss==" THAILAND")
+			self.location="Thailand.html";
+		else if(ss=="Vietnam" || ss==" Vietnam" || ss==" VIETNAM" || ss=="VIETNAM")
+			self.location="Vietnam.html";
+		else if(ss==" ")
+			window.alert("You don't write above contries");
+		else
+			window.alert("This page is limited only for 10 countries ! You can\'t have the chance to learn other countries.Please type one of the given countries.Thanks you very much!");
+	}
+
+	</script>
+</head>
+<body background="images/body_back.jpg" bgcolor="beige">
+	<table width=80% align=center bgcolor="beige" cellspacing=20>
+		<tr bgcolor="ivory">
+			<td>
+				<center>
+					<marquee behavior="alternate" loop=infinite>
+						<blink>
+							<font size=6 color=#3333FF >Welcome</font>
+							<font size=6 color=#FFFF00>Skyscrapers</font>
+							<font size=6 color=#00FF33>Around </font>
+							<font size=6 color=>the</font>
+							<font size=6 color=>World</font>
+						</blink>
+					</marquee>
+				</center>
+			</td>
+		</tr>
+		<tr  background="images/header.jpg"  style="{background-repeat: no-repeat;}">
+			<td><br>
+					
+					<center>
+						<font color="FloralWhite">&nbsp;&nbsp;If searching towers,highest impressive building,enter the following countries.<br></font>
+						<font color="cyan">
+							<script language="javascript">
+								var array=new Array("American(USA)","France","Germany","Japan","Malaysia","China","Switzerland","Thailand","Vietnam","England");
+								var ss=array.sort();
+								for(var i=0;i<ss.length;i++)
+								{
+									document.write(ss[i]+"<br>");
+								}
+								</script>
+								<br>
+						</font>
+						<form name="myform">
+							<input type="text" size=30 value=" " id="t1" onMouseup="window.alert('Don\'t forget write above country !');"> 
+								<blink>
+									<input type="button" value="Go Search" onClick="search();">
+								</blink>
+							<br><br>
+							<input type="button" value="Help" onClick=window.open("help.html","Help");>
+							<input type="button" value="Members" onClick="window.open('member.html','member');"><br>
+							
+							<br>
+						</form>
+						<br>
+					</center>
+					
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

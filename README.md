@@ -24,5 +24,5 @@ Country List
 * Switzerland
 
 Especially, 
-Use CSS to get better and eye attractive GUI. 
+use CSS to get better and eye attractive GUI. 
 Also use Javascript functions & event type for backend processes.
